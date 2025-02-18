@@ -1,21 +1,20 @@
-/* Base styles for light mode */
+
 body {
-    color: #262626; /* Темный текст для светлого фона */
+    color: #262626; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fafafa; /* Светлый фон */
+    background-color: #fafafa;
     min-height: 100vh;
 }
 
-/* Layout */
+
 .container {
     display: flex;
-    max-width: 935px;
+    max-width:935px;
     min-height: 70vh;
     margin: 100px auto 32px;
     padding: 0 20px;
 }
 
-/* Left section with phones image */
 .left_content {
     margin-bottom: 12px;
     flex: 1;
@@ -27,20 +26,21 @@ body {
     object-fit: contain;
 }
 
-/* Right section with login form */
+
 .right_content {
     display: flex;
     max-width: 350px;
-    flex-direction: column;
+
+    flex-direction:column;
     margin-top: 12px;
 }
 
-/* Auth card styles */
+
 .auth_card {
     padding: 40px;
-    border: 1px solid #dbdbdb; /* Светлая граница */
+    border: 1px solid #dbdbdb;
     margin-bottom: 10px;
-    background-color: #ffffff; /* Белый фон */
+    background-color: #ffffff; 
 }
 
 .logo {
@@ -50,7 +50,7 @@ body {
     margin: 0 auto 24px;
 }
 
-/* Form styles */
+
 form > fieldset {
     display: flex;
     margin: 5px auto;
@@ -61,9 +61,9 @@ form > fieldset > input {
     width: 100%;
     padding: 9px 8px 7px;
     font-size: 12px;
-    background-color: #fafafa; /* Светлый фон */
-    border: 1px solid #dbdbdb; /* Светлая граница */
-    color: #262626; /* Темный текст */
+    background-color: #fafafa; 
+    border: 1px solid #dbdbdb; 
+    color: #262626; 
     border-radius: 2px;
 }
 
@@ -76,10 +76,10 @@ form > button {
     font-weight: 700;
     line-height: 28px;
     border-radius: 8px;
-    background-color: #0095f6; /* Синий цвет кнопки */
+    background-color: #0095f6; 
 }
 
-/* Divider styles */
+
 .split {
     display: flex;
     align-items: center;
@@ -90,17 +90,17 @@ form > button {
 .split div {
     flex-grow: 1;
     height: 1px;
-    background-color: #dbdbdb; /* Светлая линия */
+    background-color: #dbdbdb;
 }
 
 .split p {
     margin: 0 18px;
-    color: #8e8e8e; /* Серый текст */
+    color: #8e8e8e; 
     font-size: 14px;
     font-weight: bold;
 }
 
-/* Facebook login styles */
+
 .facebook {
     display: flex;
     align-items: center;
@@ -109,7 +109,7 @@ form > button {
 }
 
 .facebook svg {
-    color: #1877f2; /* Синий цвет иконки Facebook */
+    color: #1877f2; 
     width: 20px;
     height: 20px;
     margin-right: 8px;
@@ -117,29 +117,29 @@ form > button {
 
 .facebook a {
     text-decoration: none;
-    color: #1877f2; /* Синий цвет текста */
+    color: #1877f2; 
     font-size: 14px;
     font-weight: bold;
 }
 
-/* Forgot password link */
+
 .forget a {
     display: block;
     text-align: center;
     font-size: 14px;
     text-decoration: none;
     margin: 10px 0;
-    color: #00376b; /* Темно-синий цвет */
+    color: #00376b; 
 }
 
-/* Sign up section */
+
 .another_login {
     display: flex;
     margin-top: 10px;
     font-size: 14px;
     padding: 25px 5px;
-    border: 1px solid #dbdbdb; /* Светлая граница */
-    background-color: #ffffff; /* Белый фон */
+    border: 1px solid #dbdbdb; 
+    background-color: #ffffff;
 }
 
 .another_login p {
@@ -148,12 +148,12 @@ form > button {
 
 .another_login a {
     margin-left: 4px;
-    color: #0095f6; /* Синий цвет ссылки */
+    color: #0095f6;
     font-weight: bold;
     text-decoration: none;
 }
 
-/* Download section */
+
 .download {
     text-align: center;
     margin-top: 20px;
@@ -175,7 +175,7 @@ form > button {
     height: 40px;
 }
 
-/* Responsive styles */
+
 @media (max-width: 875px) {
     .left_content {
         display: none;
