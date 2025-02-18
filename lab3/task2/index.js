@@ -23,8 +23,10 @@ function addTask() {
         checkbox.addEventListener('change', function () {
             if (this.checked) {
                 taskSpan.style.textDecoration = "line-through";
+                
             } else {
                 taskSpan.style.textDecoration = "none";
+                
             }
         });
 
