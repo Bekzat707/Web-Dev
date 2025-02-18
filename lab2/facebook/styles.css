@@ -143,12 +143,12 @@ html, body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Раздвигает контент и футер */
+    justify-content: space-between; 
     background-color: #f0f2f5;
 }
 
 .container {
-    flex: 1; /* Контент занимает всё доступное пространство */
+    flex: 1; 
     display: flex;
     justify-content: space-between;
     align-items: center;
