@@ -2,6 +2,7 @@
   <img [src]="product.imageUrl" alt="{{ product.name }}">
   <h3>{{ product.name }}</h3>
   <p>{{ product.description }}</p>
+  <p>⭐️ {{product.rating}}</p>
   <a [href]="product.link" target="_blank" class="kaspi-button">Купить на Kaspi</a>
   <div class="buttons">
     <button (click)="likeProduct()">❤️ {{ product.likes }}</button>
