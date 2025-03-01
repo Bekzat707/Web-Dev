@@ -10,17 +10,14 @@ export class AlbumsService {
 
   constructor(private http: HttpClient) {}
 
-  // Получить все альбомы
   getAlbums(): Observable<any[]> {
     return this.http.get<any[]>(this.apiUrl);
   }
 
-  // Создать новый альбом
   createAlbum(album: { title: string }): Observable<any> {
     return this.http.post<any>(this.apiUrl, album);
   }
 
-  // Удалить альбом
   deleteAlbum(id: number): Observable<any> {
     return this.http.delete<any>(`${this.apiUrl}/${id}`);
   }
@@ -28,7 +25,6 @@ export class AlbumsService {
     return this.http.get<any>(`${this.apiUrl}/${id}`);
   }
 
-  // Обновить альбом
   updateAlbum(id: number, album: any): Observable<any> {
     return this.http.put<any>(`${this.apiUrl}/${id}`, album);
   }
