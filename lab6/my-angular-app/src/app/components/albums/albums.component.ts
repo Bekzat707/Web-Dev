@@ -22,36 +22,33 @@ export class AlbumsComponent implements OnInit {
     this.loadAlbums();
   }
 
-  // Загрузить альбомы
   loadAlbums(): void {
     this.albumsService.getAlbums().subscribe({
       next: (data) => {
         this.albums = data;
-        console.log('Albums loaded:', data); // Логируем данные для проверки
+        console.log('Albums loaded:', data); 
       },
       error: (err) => {
-        console.error('Error loading albums:', err); // Логируем ошибку, если она есть
+        console.error('Error loading albums:', err); 
       },
     });
   }
 
-  // Добавить новый альбом
   addAlbum(): void {
-    if (!this.newAlbumTitle.trim()) return; // Проверка на пустую строку
+    if (!this.newAlbumTitle.trim()) return; 
 
     const newAlbum = { title: this.newAlbumTitle };
     this.albumsService.createAlbum(newAlbum).subscribe({
       next: (album) => {
-        this.albums.push(album); // Добавляем новый альбом в массив
-        this.newAlbumTitle = ''; // Очищаем поле ввода
+        this.albums.push(album); 
+        this.newAlbumTitle = ''; 
       },
       error: (err) => {
-        console.error('Error adding album:', err); // Логируем ошибку, если она есть
+        console.error('Error adding album:', err);
       },
     });
   }
 
-  // Удалить альбом
   deleteAlbum(id: number): void {
     this.albumsService.deleteAlbum(id).subscribe({
       next: () => {
@@ -63,7 +60,6 @@ export class AlbumsComponent implements OnInit {
     });
   }
 
-  // Перейти к деталям альбома
   viewAlbumDetail(id: number): void {
     this.router.navigate(['/albums', id]);
   }
