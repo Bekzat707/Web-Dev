@@ -1,22 +1,15 @@
-import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { CommonModule } from '@angular/common';
+import { Component} from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [CommonModule, RouterModule],
-  template: `
-    <h1>My Angular App</h1>
-    <nav>
-      <a routerLink="/home">Home</a> |
-      <a routerLink="/about">About</a> |
-      <a routerLink="/albums">Albums</a>
-    </nav>
-    <router-outlet></router-outlet>
-  `,
-  styleUrls: ['./app.component.css'],
+  imports: [RouterOutlet],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'angular-albums-app';
+  title = 'album-app';
+
+  
+
 }
