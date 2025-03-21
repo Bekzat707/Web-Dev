@@ -1,0 +1,10 @@
+<div class="albums-container">
+  <h1>Albums</h1>
+  <p class="lead">Want to see more? Click an album to check out its details and photos.</p>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let album of albums">
+      <a [routerLink]="['/albums', album.id]" class="text-decoration-none">{{ album.title }}</a>
+      <button class="btn btn-danger btn-sm float-end" (click)="deleteAlbum(album.id)">Delete</button>
+    </li>
+  </ul>
+</div>

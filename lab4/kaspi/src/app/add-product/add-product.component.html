@@ -1,9 +1,0 @@
-<p>add-product works!</p>
-<form (ngSubmit)="addProduct()">
-    <input type="text" placeholder="Название" [(ngModel)]="newProduct.name" name="name" required>
-    <input type="text" placeholder="Описание" [(ngModel)]="newProduct.description" name="description" required>
-    <input type="url" placeholder="ссылка на фото" [(ngModel)]="newProduct.image" name="image" required>
-    <input type="number" placeholder="Рейтинг" [(ngModel)]="newProduct.rating" name="rating" min="0" max="5" required>
-    <input type="url" placeholder="Ссылка на продукт" [(ngModel)]="newProduct.link" name="link" required>
-    <button type="submit">Добавить</button>
-</form>

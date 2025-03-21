@@ -1,0 +1,5 @@
+<h1>Album Detail</h1>
+<input [(ngModel)]="album.title" />
+<button (click)="saveAlbum()">Save</button>
+<button (click)="goBack()">Return</button>
+<a [routerLink]="['/albums', album.id, 'photos']">Photos</a>
