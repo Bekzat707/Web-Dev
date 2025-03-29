@@ -14,10 +14,13 @@ def is_prime(n):
         if n % i == 0:
             return False
     return True
-#
-n = int(input())
-print("YES" if is_prime(n) else "NO")
+#С
 
+def xor(x: int, y: int) -> int:
+    return (x + y) % 2 
+
+x, y = map(int, input().split())
+print(xor(x, y))
 
 #D
 def power(a, b):
